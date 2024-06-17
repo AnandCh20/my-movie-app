@@ -39,15 +39,6 @@ function MovieSearch() {
 
   return (
     <div className="container mt-5">
-      <form className="d-flex mb-4" role="search" onSubmit={handleSearch}>
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search for movies by title"
-          aria-label="Search"
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-      </form>
       {loading ? (
         <p>Loading...</p>
       ) : error ? (
